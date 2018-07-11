@@ -32,4 +32,9 @@ class TestCoin < Minitest::Test
     	amount = 26
     	assert_equal({:quarter => 1, :penny => 1}, changer(amount))
     end
+
+    def test_if_all_coins_work_together
+    	amount = 41
+    	assert_equal({:quarter => 1, :dime => 1, :nickel => 1, :penny => 1}, changer(amount))
+    end
 end
