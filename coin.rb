@@ -4,6 +4,8 @@ def changer(amount)
 		if amount >= 25
 			change[:quarter] = 1
 			amount -= 25
+		# elsif change[:quarter]
+			
 		elsif amount >= 10
 			change[:dime] = 1
 			amount -= 10

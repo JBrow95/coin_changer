@@ -27,4 +27,9 @@ class TestCoin < Minitest::Test
     	amount = 25
     	assert_equal({:quarter => 1}, changer(amount))
     end
+
+    def test_if_use_of_more_than_one_coin_works
+    	amount = 26
+    	assert_equal({:quarter => 1, :penny => 1}, changer(amount))
+    end
 end
