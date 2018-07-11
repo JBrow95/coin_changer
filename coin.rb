@@ -1,8 +1,10 @@
 def changer(amount)
 	change = {}
 	while amount > 0 do
-		
-		if amount >= 5
+		if amount >= 10
+			change[:dime] = 1
+			amount -= 10
+		elsif amount >= 5
 			change[:nickel] = 1
 		   amount -= 5		
 		elsif amount >= 1
