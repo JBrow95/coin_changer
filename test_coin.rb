@@ -7,4 +7,8 @@ class TestCoin < Minitest::Test
         assert_equal({:penny => 1}, changer(1))
     end
 
+    def test_if_nickel_equals_5
+    	assert_equal({:nickel => 5}, changer(5))
+    end
+
 end
