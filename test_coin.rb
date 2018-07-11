@@ -37,4 +37,14 @@ class TestCoin < Minitest::Test
     	amount = 41
     	assert_equal({:quarter => 1, :dime => 1, :nickel => 1, :penny => 1}, changer(amount))
     end
+
+    def test_if_2_quarters_can_be_used
+    	amount = 50
+    	assert_equal({:quarter => 2}, changer(amount))
+    end
+
+    def test_if_2_coins_and_1_other_coin_can_work
+    	amount = 55
+    	assert_equal({:quarter => 2, :nickel => 1}, changer(amount))
+    end
 end
