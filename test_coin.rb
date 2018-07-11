@@ -25,6 +25,6 @@ class TestCoin < Minitest::Test
 
     def test_if_quarter_equals_25
     	amount = 25
-    	assert_equal({:quarter => 25}, changer(amount))
+    	assert_equal({:quarter => 1}, changer(amount))
     end
 end
