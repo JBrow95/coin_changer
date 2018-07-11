@@ -18,4 +18,8 @@ class TestCoin < Minitest::Test
     	assert_equal({:nickel => 1}, changer(amount))
     end
 
+    def test_if_dime_equals_10
+    	amount = 10
+    	assert_equal({:dime => 1}, changer(amount))
+    end
 end
